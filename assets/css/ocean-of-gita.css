@@ -13,6 +13,16 @@
    ========================================================================== */
 
 /**
+ * Add border spacing between portfolio tiles
+ */
+.portfolio-item {
+    border: 4px solid #D4AF37;
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+/**
  * Darken teaching card images for better text visibility
  */
 .portfolio-item img {

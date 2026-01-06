@@ -10,9 +10,11 @@ OceanOfGita/
 ├── assets/
 │   ├── css/
 │   │   ├── styles.css                    # Bootstrap core styles
-│   │   └── ocean-of-gita.css            # Custom project styles
+│   │   ├── ocean-of-gita.css            # Custom homepage styles
+│   │   └── teaching.css                  # Teaching page styles
 │   ├── js/
-│   │   └── scripts.js                    # Core theme JavaScript
+│   │   ├── scripts.js                    # Core theme JavaScript
+│   │   └── teaching.js                   # Teaching page interactive features
 │   └── images/
 │       ├── favicon.ico                   # Website favicon
 │       ├── backgrounds/
@@ -24,6 +26,7 @@ OceanOfGita/
 │           ├── popular-teachings.jpg     # Popular Teachings card image
 │           └── latest-insights.jpg       # Latest Insights card image
 ├── index.html                            # Main landing page
+├── teaching.html                         # Teaching content page with tabs
 └── PROJECT_STRUCTURE.md                  # This file
 
 ```

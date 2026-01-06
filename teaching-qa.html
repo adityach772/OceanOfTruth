@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Ocean of Bhagavad Gita - Guru's Wisdom Q&A" />
+        <meta name="author" content="" />
+        <title>Guru's Wisdom - Ocean of Bhagavad Gita</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Crimson+Text:wght@400;600;700&display=swap" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="assets/css/styles.css" rel="stylesheet" />
+        <!-- Ocean of Gita Custom Styles -->
+        <link href="assets/css/ocean-of-gita.css" rel="stylesheet" />
+        <!-- Q&A Page CSS -->
+        <link href="assets/css/qa.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+        <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="index.html">Ocean of Gita</a></li>
+                <li class="sidebar-nav-item"><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+
+        <!-- Q&A Header Section -->
+        <section class="qa-header-section">
+            <div class="container px-4 px-lg-5">
+                <div class="qa-header-wrapper">
+                    <h1 class="qa-main-heading">Guru's Wisdom</h1>
+                    <p class="qa-subtitle">Questions from Disciples, Answers from the Guru</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Questions List Section -->
+        <section class="qa-list-section" id="qa-list-section">
+            <div class="container px-4 px-lg-5">
+                <!-- Search and Sort Controls -->
+                <div class="qa-controls">
+                    <div class="search-wrapper">
+                        <i class="fas fa-search search-icon"></i>
+                        <input
+                            type="text"
+                            id="search-input"
+                            class="search-input"
+                            placeholder="Search questions by keywords..."
+                            onkeyup="searchQuestions()"
+                        />
+                    </div>
+                    <div class="sort-wrapper">
+                        <label for="sort-select" class="sort-label">Sort by:</label>
+                        <select id="sort-select" class="sort-select" onchange="sortQuestions()">
+                            <option value="views">Most Viewed</option>
+                            <option value="date">Latest</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Questions List -->
+                <div class="questions-list" id="questions-list">
+                    <!-- Questions will be loaded here by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Question Detail Section -->
+        <section class="qa-detail-section hidden" id="qa-detail-section">
+            <div class="container px-4 px-lg-5">
+                <div class="qa-detail-card">
+                    <!-- Header -->
+                    <div class="qa-detail-header">
+                        <button class="back-to-questions" onclick="backToQuestions()">
+                            <i class="fas fa-arrow-left"></i> Back to Questions
+                        </button>
+                        <div class="qa-stats">
+                            <span class="view-count" id="detail-views">
+                                <i class="fas fa-eye"></i> <span id="view-count-text">0</span> views
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Question -->
+                    <div class="question-section">
+                        <div class="disciple-label">
+                            <i class="fas fa-user"></i> Disciple Asks:
+                        </div>
+                        <h2 class="question-text" id="detail-question"></h2>
+                    </div>
+
+                    <!-- Answer -->
+                    <div class="answer-section">
+                        <div class="guru-label">
+                            <i class="fas fa-om"></i> Guru Answers:
+                        </div>
+                        <div class="answer-content" id="detail-answer">
+                            <!-- Answer content will be loaded here -->
+                        </div>
+                    </div>
+
+                    <!-- Related Verse (if any) -->
+                    <div class="related-verse hidden" id="related-verse">
+                        <!-- Verse will be loaded here if available -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="assets/js/scripts.js"></script>
+        <!-- Q&A Page JS-->
+        <script src="assets/js/qa.js"></script>
+    </body>
+</html>
